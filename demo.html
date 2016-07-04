@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>jQuery.fancycheck</title>
+        <style>
+            body {font-family:arial,helvetica}
+            label.fancy-check {-webkit-user-select: none;display:block;margin:0 0 4px;}
+            label.fancy-check span {background:#fff;border:1px solid #666;display:inline-block;border-radius:4px;cursor:pointer;margin-right:5px}
+            label.fancy-check span.checked {background:#666;box-shadow:0 0 0 3px #fff inset}
+            label.fancy-check:hover span {box-shadow:0 0 3px 3px #ededed inset}
+            label.fancy-check:hover span.checked {box-shadow:0 0 2px 2px #ededed inset,0 0 0 3px #fff inset}
+        </style>
+
+    </head>
+    <body>
+
+        <div id="demoWrap">
+
+            <p>
+                <label><input type="checkbox" checked="checked" data-behavior="fancyCheck">Hey there</label>
+                <label><input type="checkbox" data-behavior="fancyCheck">Hey there</label>
+                <label><input type="checkbox" checked="checked" data-behavior="fancyCheck">Hey there</label>
+                <label><input type="checkbox" data-behavior="fancyCheck">Hey there</label>
+                <label><input type="checkbox" checked="checked" data-behavior="fancyCheck">Hey there</label>
+                <label><input type="checkbox" data-behavior="fancyCheck">Hey there</label>
+                <label><input type="checkbox" checked="checked" data-behavior="fancyCheck">Hey there</label>
+                <label><input type="checkbox" data-behavior="fancyCheck">Hey there</label>
+            </p>
+
+        </div>
+
+        <script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+        <script language="javascript" type="text/javascript" src="jquery.fancycheck.js"></script>
+        <script language="javascript" type="text/javascript">
+            $(function(){
+                $('[data-behavior=fancyCheck]').fancyCheck();
+            });
+        </script>
+    </body>
+</html>
